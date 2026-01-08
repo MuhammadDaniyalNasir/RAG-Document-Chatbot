@@ -2,6 +2,11 @@
 
 A powerful Retrieval-Augmented Generation (RAG) chatbot built with Streamlit that allows users to upload PDF documents and ask questions about their content. The system uses advanced NLP techniques to provide accurate, context-aware responses based on the uploaded documents.
 
+## 💡 Why This Project?
+Businesses store critical knowledge in PDFs (policies, reports, manuals), but accessing that information is slow and inefficient.
+
+This project demonstrates a **production-style Retrieval-Augmented Generation (RAG) system** that enables accurate, source-aware question answering over documents — similar to internal AI assistants used by modern companies.
+
 ## 🚀 Features
 
 - **PDF Document Processing**: Upload and process PDF files for question answering
@@ -79,6 +84,20 @@ A powerful Retrieval-Augmented Generation (RAG) chatbot built with Streamlit tha
    - Type your questions in the chat input
    - Get AI-powered responses based on your PDF content
    - View source documents and relevance scores in expandable sections
+
+## 🧠 Key Engineering Decisions
+- Used FAISS for fast local vector search and cost efficiency
+- Chunking strategy optimized for semantic retrieval
+- Cached vector store to reduce repeated embedding cost
+- Implemented fallback mechanism to ensure graceful degradation
+
+## 🚧 Limitations & Future Improvements
+- No role-based access control (planned)
+- No cloud deployment (Docker + AWS planned)
+- No query logging or analytics
+- No multi-document indexing at scale
+
+These improvements would be required for enterprise deployment.
 
 ## 📁 Project Structure
 
